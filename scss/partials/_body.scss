@@ -1,0 +1,26 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-size: 100%;
+  background-color: white;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    margin-left: 100px;
+  }
+  .image-malvina {
+    width: 900px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner-container {
+    flex-direction: column;
+    .image-malvina {
+      width: 100%;
+    }
+  }
+}

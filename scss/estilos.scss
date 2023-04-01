@@ -1,61 +1,7 @@
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-size: 100%;
-  background-color: white;
-}
-
-.banner-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.banner-container h1 {
-  margin-left: 100px;
-}
-.banner-container .image-malvina {
-  width: 900px;
-}
-
-@media (max-width: 1200px) {
-  .banner-container {
-    flex-direction: column;
-  }
-  .banner-container .image-malvina {
-    width: 100%;
-  }
-}
-nav {
-  background-color: rgb(111, 149, 182);
-}
-nav li {
-  display: inline;
-  margin: 40px;
-  border: #060617;
-  bottom: 20px;
-  text-decoration: none;
-}
-nav li .nav-link {
-  color: white !important;
-  font-size: 1.3rem;
-}
-
-/* li */
-footer {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-footer li {
-  display: inline-block;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  text-align: center;
-}
-footer .logos-redes {
-  height: 2rem;
-}
+@use './partials/body';
+@use './partials/nav';
+@use './partials/footer';
+@use './partials/variables';
 
 * {
   margin: 0;
@@ -85,13 +31,14 @@ h1 {
 
 .contenedor_sobre_nosotros > img {
   width: 100%;
+
   padding: 5px;
 }
 
 .nuestros servicios {
   bottom: 40px;
   background: #8313de;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font: 300;
 }
 
@@ -252,23 +199,21 @@ footer div ul li {
 .imagen_port:hover.hover-galeria {
   transform: scale(1);
 }
-
 .responsive-imag {
   max-width: 100%;
   height: auto;
 }
-
 /*Pseudoelementos*/
 h3:nth-child(1) {
-  background-color: rgb(111, 149, 182);
+  background-color: variables.$color-fondo-principal;
 }
 
 h3:nth-child(3) {
-  background-color: rgb(111, 149, 182);
+  background-color: variables.$color-fondo-principal;
 }
 
 h3:nth-child(5) {
-  background-color: rgb(111, 149, 182);
+  background-color: variables.$color-fondo-principal;
 }
 
 .subtitle-penal {
@@ -280,39 +225,42 @@ h3:nth-child(5) {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-}
-.container-penal .penal-content {
-  background-color: rgb(111, 149, 182);
-  min-height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 50px;
+
+  .penal-content {
+    background-color: variables.$color-fondo-principal;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+  }
 }
 
 .familia-banner {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-.familia-banner .familia-banner-content {
-  margin-right: 50px;
+
+  .familia-banner-content {
+    margin-right: 50px;
+  }
 }
 
 .container-familia {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.container-familia .familia-element {
-  background-color: rgb(111, 149, 182);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  padding: 50px;
+
+  .familia-element {
+    background-color: variables.$color-fondo-principal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 50px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -320,24 +268,27 @@ h3:nth-child(5) {
     flex-direction: column;
   }
 }
+
 .laboral-container {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.laboral-container .laboral-content {
-  margin: 10px 0;
-  padding: 50px;
-  background-color: rgb(111, 149, 182);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.laboral-container .laboral-content img {
-  width: 300px;
+
+  .laboral-content {
+    margin: 10px 0;
+    padding: 50px;
+    background-color: variables.$color-fondo-principal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      width: 300px;
+    }
+  }
 }
 
 .contact-container {
@@ -346,10 +297,8 @@ h3:nth-child(5) {
   justify-items: center;
   align-items: center;
   flex-direction: column;
+  form {
+    margin: 50px 0;
+    width: 300px;
+  }
 }
-.contact-container form {
-  margin: 50px 0;
-  width: 300px;
-}
-
-/*# sourceMappingURL=estilos.css.map */
