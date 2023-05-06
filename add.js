@@ -27,6 +27,11 @@ function enviarTurno(data) {
     const asunto = `Confirmación de turno para Estudio de Abogados`;
     const cuerpo = mensaje;
     const correoElectronico = `mailto:${email}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+const emailDestino = "malbihi@gmail.com";
+const asunto = `Confirmación de turno para Estudio de Abogados`;
+const cuerpo = mensaje;
+const correoElectronico = `mailto:${emailDestino}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+window.location.href = correoElectronico;
 
     // Redireccionar al usuario a la página de pago
     const urlPago = `https://link.mercadopago.com.ar/abogadamalvinaramayo`;
