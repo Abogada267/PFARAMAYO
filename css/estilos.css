@@ -352,24 +352,6 @@ h3:nth-child(5) {
   width: 300px;
 }
 
-body {
-    background-color: #f5f8fa;
-    color: #37474f;
-    font-family: sans-serif;
-}
-
-header {
-    background-color: #2196f3;
-    color: white;
-    padding: 5px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-}
 
 form {
     display: flex;
