@@ -379,8 +379,8 @@ form {
 }
 
 label {
-    margin-right: 0.5em;
-    margin-bottom: 0.5em;
+    margin-right: 2px;
+    margin-bottom: 2px;
 }
 
 input[type="text"],
