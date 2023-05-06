@@ -54,9 +54,10 @@
           </ul>
         </div>
       </nav>
+      <h1>Turnos Estudio de Abogados</h1>
     </header>
     <main>
-      <div class="imagenparalaola banner-container">
+           <div class="imagenparalaola banner-container">
         <h1>Malvina Aramayo Estudio Jurídico</h1>
 
         <img src="imagenes/imagenprincipal.jpeg-modified.jpg" alt="Foto de Malvina" class="image-malvina" />
@@ -164,6 +165,23 @@
           </div>
         </div>
       </section>
+      <form>
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="telefono">Teléfono con Whatsapp:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" min="2023-05-09" max="2023-06-30" required>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" min="08:00" max="20:00" step="1800" required>
+            <button type="submit">Solicitar Turno</button>
+        </form>
+        <div id="confirmacion" class="oculto">
+            <h2>Turno Solicitado</h2>
+            <p>Recibirá un correo electrónico de confirmación con la información del turno.</p>
+        </div>
     </main>
     <footer>
       <ul>
