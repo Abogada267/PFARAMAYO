@@ -377,17 +377,8 @@ button {
     padding: 0.5em;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="date"],
-input[type="time"] {
-    border: 1 px solid #2196f3;
-    border-radius: 4px;
-    margin-bottom: 1em;
-}
 input[type="text"], input[type="email"], input[type="password"] {
-  border: 1px solid #ccc;
+  border: 1px solid #2196f3;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
